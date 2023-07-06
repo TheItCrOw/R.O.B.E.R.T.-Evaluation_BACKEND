@@ -11,6 +11,6 @@ export async function connectToDatabase(uri: string) {
 
    const db = client.db("BABoenisch");
 
-   const datasetCollection = db.collection<Dataset>("rateable_test_datasets_TEST");
+   const datasetCollection = db.collection<Dataset>("rateable_test_datasets");
    collections.datasets = datasetCollection;
 }
